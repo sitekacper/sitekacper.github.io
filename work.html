@@ -29,7 +29,7 @@
                     <p>Product</p>
                 </div>
             </div>
-            <!-- Dodaj więcej kart projektów tutaj -->
+            <!-- Add more project cards as needed -->
         </section>
     </main>
 
@@ -40,26 +40,26 @@
     <!-- Sticky NavBar -->
     <div class="bottom-navbar">
         <div class="nav-item">
-            <a href="index.html">
+            <a href="index.html" class="nav-link">
                 <i class="fas fa-home"></i>
                 <span>Home</span>
             </a>
         </div>
         <div class="nav-item">
-            <a href="work.html">
+            <a href="work.html" class="nav-link">
                 <i class="fas fa-briefcase"></i>
                 <span>Work</span>
             </a>
         </div>
         <div class="nav-item">
-            <a href="mailto:kacper19961996@gmail.com">
+            <a href="mailto:kacper19961996@gmail.com" class="nav-link">
                 <i class="fas fa-envelope"></i>
                 <span>Contact</span>
             </a>
         </div>
     </div>
 
-    <!-- Popup dla projektu -->
+    <!-- Popup for Project -->
     <div id="projectPopup" class="project-popup">
         <div class="popup-content">
             <button class="close-btn" onclick="closeProject()">×</button>
@@ -74,11 +74,15 @@
             <div class="project-images">
                 <img src="images/project-screenshot1.png" alt="Screenshot">
                 <img src="images/project-screenshot2.png" alt="Screenshot">
-                <!-- Dodaj więcej zrzutów ekranu, jeśli są potrzebne -->
+                <!-- Add more screenshots if needed -->
             </div>
         </div>
     </div>
 
+    <!-- Audio element for button sound -->
+    <audio id="click-sound" src="https://sitekacper.github.io/sounds/635915__earth_cord__button-push.wav" preload="auto"></audio>
+
+    <!-- JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
