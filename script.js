@@ -17,9 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add click event listener to each nav link
     navLinks.forEach(link => {
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevents navigation for testing, remove in production
             clickSound.currentTime = 0; // Rewind to the start
-            clickSound.play();          // Play sound
+            clickSound.play().catch(error => {
+                console.log("Playback prevented:", error);
+            }); // Play sound
         });
     });
 });
