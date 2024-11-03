@@ -1,8 +1,10 @@
-/* Podstawowy styl dla strony */
+/* Global Styles */
 body {
     font-family: 'JetBrains Mono', sans-serif;
-    background-color: #2a2a2a; /* ciemne tło */
-    color: #f5e6ca; /* jasny tekst */
+    font-size: 14px; /* Default font size for body text */
+    line-height: 1.5;
+    background-color: #2a2a2a; /* Dark background */
+    color: #f5e6ca; /* Light text color */
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,8 +12,10 @@ body {
     min-height: 100vh;
 }
 
+/* Header and Footer Styling */
 header, footer {
     text-align: center;
+    font-size: 14px; /* Consistent font size */
     color: #f5e6ca;
 }
 
@@ -20,30 +24,68 @@ footer {
     padding: 10px;
 }
 
+/* Main Content Styling */
 main {
     padding: 20px;
     max-width: 800px;
     margin: auto;
 }
 
-/* Stylizacja dla sticky navbar */
+/* Section Titles Styling */
+h2 {
+    font-size: 16px; /* Font size for section titles (About Me, Skills, etc.) */
+    color: #f5e6ca;
+    margin-bottom: 10px; /* Small spacing below heading */
+}
+
+/* Section Spacing */
+section {
+    margin-bottom: 60px; /* Space between each section */
+}
+
+/* Skills Section Styling */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skill {
+    padding: 8px 16px;
+    background-color: #333333; /* Dark background for each skill */
+    color: #f5e6ca; /* Light text color */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    line-height: 1.5;
+}
+
+.skill:hover {
+    background-color: #4a4a4a; /* Slightly lighter background on hover */
+    color: #ffffff; /* Change text color on hover */
+}
+
+/* Sticky Navbar */
 .bottom-navbar {
     position: fixed;
-    bottom: 10px; /* unosi navbar nieco nad krawędzią ekranu */
+    bottom: 10px; /* Lift navbar slightly above screen edge */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
-    width: 80%; /* dostosuj szerokość, aby dopasować do wymagań */
+    width: 80%; /* Adjust width as needed */
     max-width: 400px;
-    background-color: #3c3c3c; /* kolor ciemny kota */
+    background-color: #3c3c3c; /* Dark background color */
     padding: 10px;
     border-radius: 20px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
 
-/* Kontener dla każdego elementu nawigacyjnego */
+/* Navbar Item Container */
 .nav-item {
     flex: 1;
     display: flex;
@@ -54,24 +96,24 @@ main {
     border-radius: 10px;
     margin: 0 5px;
     transition: background-color 0.3s;
-    max-width: 100px; /* stała szerokość kontenerów */
+    max-width: 100px; /* Fixed width for containers */
 }
 
 .nav-item:hover {
-    background-color: #5c5c5c; /* jaśniejszy kolor na hover */
+    background-color: #5c5c5c; /* Lighter color on hover */
 }
 
-/* Link w środku każdego kontenera */
+/* Link within each nav-item */
 .nav-item a {
     color: #f5e6ca;
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 8px; /* odstęp między ikoną a tekstem */
+    gap: 8px; /* Space between icon and text */
     font-size: 14px;
 }
 
-/* Ikony w kontenerach */
+/* Icons in nav-items */
 .nav-item i {
     font-size: 20px;
     color: #f5e6ca;
@@ -80,16 +122,16 @@ main {
 
 .nav-item:hover i,
 .nav-item:hover span {
-    color: #ffffff; /* zmiana koloru ikony i tekstu na biały przy najechaniu */
+    color: #ffffff; /* Change icon and text color to white on hover */
 }
 
-/* Tekst w nawigacji */
+/* Text in Navigation */
 .nav-item span {
     font-size: 14px;
     color: #f5e6ca;
 }
 
-/* Styl dla sekcji projektów */
+/* Project Section Styling */
 .projects {
     display: flex;
     flex-direction: column;
@@ -101,14 +143,14 @@ main {
     display: flex;
     align-items: center;
     padding: 15px;
-    background-color: #3c3c3c; /* ciemny kolor */
+    background-color: #3c3c3c; /* Dark color */
     border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .project-card:hover {
-    background-color: #5c5c5c; /* jaśniejszy kolor przy najechaniu */
+    background-color: #5c5c5c; /* Lighter color on hover */
 }
 
 .project-card img {
@@ -120,15 +162,16 @@ main {
 .project-info h3 {
     margin: 0;
     color: #f5e6ca;
+    font-size: 16px; /* Section titles font size */
 }
 
 .project-info p {
     margin: 5px 0 0;
     color: #f5e6ca;
-    font-size: 12px;
+    font-size: 14px; /* Consistent font size for info text */
 }
 
-/* Popup stylizacja */
+/* Popup Styling */
 .project-popup {
     display: none;
     position: fixed;
@@ -156,6 +199,7 @@ main {
 
 .popup-content h2 {
     color: #f5e6ca;
+    font-size: 16px; /* Consistent heading font size */
 }
 
 .close-btn {
@@ -169,34 +213,9 @@ main {
     cursor: pointer;
 }
 
-/* Stylizacja obrazów w popupie */
+/* Project Images in Popup */
 .project-images img {
     width: 100%;
     margin-top: 10px;
     border-radius: 10px;
-}
-/* Skills Section Styling */
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.skill {
-    padding: 8px 16px;
-    background-color: #333333; /* Dark background for each skill */
-    color: #f5e6ca; /* Light text color */
-    border-radius: 8px; /* Rounded corners */
-    font-size: 14px;
-    font-family: 'JetBrains Mono', sans-serif;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    line-height: 1.5;
-}
-
-.skill:hover {
-    background-color: #4a4a4a; /* Slightly lighter background on hover */
-    color: #ffffff; /* Change text color on hover */
 }
