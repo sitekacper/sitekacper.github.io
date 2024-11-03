@@ -55,13 +55,12 @@ main {
     font-size: 14px;
 }
 
-.nav-item img {
-    width: 24px;
-    height: 24px;
+.nav-item i {
+    font-size: 24px; /* Rozmiar ikony */
     margin-bottom: 5px;
-    filter: invert(89%) sepia(4%) saturate(10%) hue-rotate(178deg) brightness(105%) contrast(100%);
+    color: #f5e6ca; /* Jasny kolor tekstu */
 }
 
-.nav-item a:hover {
-    color: #ffffff;
+.nav-item a:hover i {
+    color: #ffffff; /* Kolor ikony po najechaniu */
 }
