@@ -1,11 +1,10 @@
-// script.js
+// Funkcja do otwierania popupu
+function openProject(projectId) {
+    document.getElementById("projectPopup").style.display = "flex";
+    // W przyszłości można dodać logikę ustawiania zawartości popupu na podstawie `projectId`
+}
 
-document.addEventListener("DOMContentLoaded", function() {
-    console.log("JavaScript jest poprawnie podłączony i gotowy do użycia.");
-
-    // Funkcja przykładowa, dodająca alert po kliknięciu nagłówka
-    const header = document.querySelector("header h1");
-    header.addEventListener("click", function() {
-        alert("Witaj na mojej stronie portfolio!");
-    });
-});
+// Funkcja do zamykania popupu
+function closeProject() {
+    document.getElementById("projectPopup").style.display = "none";
+}
