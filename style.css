@@ -33,36 +33,58 @@ main {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    justify-content: space-around; /* równomierne rozłożenie elementów */
+    justify-content: space-between;
     width: 80%; /* dostosuj szerokość, aby dopasować do wymagań */
     max-width: 400px;
     background-color: #3c3c3c; /* kolor ciemny kota */
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 10px;
+    border-radius: 20px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
 
+/* Kontener dla każdego elementu nawigacyjnego */
 .nav-item {
-    text-align: center;
-    flex: 1; /* równomierne zajmowanie przestrzeni przez każdy element */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #4a4a4a;
+    border-radius: 10px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+    max-width: 100px; /* stała szerokość kontenerów */
 }
 
+.nav-item:hover {
+    background-color: #5c5c5c; /* jaśniejszy kolor na hover */
+}
+
+/* Link w środku każdego kontenera */
 .nav-item a {
     color: #f5e6ca;
     text-decoration: none;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    gap: 8px; /* odstęp między ikoną a tekstem */
     font-size: 14px;
 }
 
+/* Ikony w kontenerach */
 .nav-item i {
-    font-size: 24px; /* Rozmiar ikony */
-    margin-bottom: 5px;
-    color: #f5e6ca; /* Jasny kolor tekstu */
+    font-size: 20px;
+    color: #f5e6ca;
+    transition: color 0.3s;
 }
 
-.nav-item a:hover i {
-    color: #ffffff; /* Kolor ikony po najechaniu */
+.nav-item:hover i,
+.nav-item:hover span {
+    color: #ffffff; /* zmiana koloru ikony i tekstu na biały przy najechaniu */
+}
+
+/* Tekst w nawigacji */
+.nav-item span {
+    font-size: 14px;
+    color: #f5e6ca;
 }
