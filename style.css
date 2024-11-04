@@ -216,6 +216,13 @@ section {
     border-radius: 8px;
 }
 
+.project-image video.project-video {
+    width: 100%; /* Full width of the containing div */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 120px; /* Restrict max width to match the image size */
+    border-radius: 8px; /* Match other image styling */
+}
+
 /* Popup Styling */
 .project-popup {
     display: none;
