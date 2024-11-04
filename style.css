@@ -12,6 +12,15 @@ body {
     min-height: 100vh;
 }
 
+/* Centered content container */
+.centered-content {
+    display: grid;
+    row-gap: 20px;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* Header and Footer Styling */
 header, footer {
     text-align: center;
