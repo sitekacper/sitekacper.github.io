@@ -52,3 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+//animacja obrazka
+document.addEventListener('DOMContentLoaded', function() {
+    const svgElement = document.querySelector('.draw-svg');
+
+    svgElement.addEventListener('click', function() {
+        svgElement.style.animation = 'none';
+        setTimeout(() => {
+            svgElement.style.animation = '';
+        }, 10);
+    });
+});
