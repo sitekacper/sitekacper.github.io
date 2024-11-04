@@ -233,20 +233,27 @@ section {
     max-width: 550px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #2a2a2a; /* Dark background to match site theme */
+    border: 1px solid #4a4a4a; /* Border similar to other sections */
+    border-radius: 8px;
     display: grid;
     row-gap: 24px;
+    margin-top: 20px; /* Space from Skills section */
 }
 
 .projects-section h2 {
-    font-size: 1.5em;
+    font-size: 16px; /* Match section title font size */
+    color: #fff8ea; /* Light text color for title */
     margin-bottom: 10px;
 }
 
+/* Project Card Styling */
 .project-card {
     display: flex;
     justify-content: space-between;
-    padding: 24px;
-    background-color: #ffffff;
+    align-items: center;
+    padding: 15px;
+    background-color: #3c3c3c; /* Dark card background */
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -258,36 +265,80 @@ section {
 .project-content h3 {
     font-size: 1.2em;
     margin: 0;
-    margin-bottom: 8px;
+    color: #f5e6ca; /* Light color for project titles */
 }
 
 .project-content p {
     font-size: 0.9em;
-    color: #777777;
+    color: #ccc; /* Light gray text for descriptions */
     margin-bottom: 12px;
 }
 
+/* Updated Button Styling */
 .project-button {
     padding: 10px 20px;
     font-size: 0.9em;
-    background-color: #ddd;
+    background-color: #f5e6ca; /* White-like background for buttons */
+    color: #333;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px; /* Rounded corners for button */
     cursor: pointer;
     text-decoration: none;
-    color: #333;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-button:hover {
-    background-color: #bbb;
+    background-color: #e0d4b9; /* Slightly darker shade on hover */
 }
 
+/* Disabled Button Styling */
 .project-button.disabled {
     background-color: #ccc;
     cursor: not-allowed;
 }
 
+/* Project Image */
 .project-image img {
-    max-width: 230px;
+    max-width: 120px; /* Adjusted size for images to fit within card */
+    height: auto;
     border-radius: 8px;
+}
+
+/* Service CTA */
+.service-cta {
+    -webkit-text-size-adjust: 100%;
+    --blue-grey-bg: #0b355108;
+    --black-4: #0000001a;
+    --black-2: #00000080;
+    --white: white;
+    --orange: #ff6128;
+    --black-3: #0006;
+    --medium-sea-green: #008d3e;
+    --black-5: #000c;
+    --white-smoke: #f7f7f7;
+    --black: black;
+    color: #1f2220;
+    cursor: default;
+    font-family: JetBrains Mono, sans-serif;
+    line-height: 24px;
+    font-size: 15px;
+    box-sizing: border-box;
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    background-color: #fff;
+    background-image: none;
+    border: 0.5px solid #e6e6e6;
+    border-radius: 7px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+    display: flex;
+    box-shadow: 0 0 0 1px #0000001a;
 }
