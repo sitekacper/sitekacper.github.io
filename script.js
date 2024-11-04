@@ -52,3 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+  const svgContainer = document.querySelector('.svg-container');
+
+  svgContainer.addEventListener('click', function() {
+    svgContainer.style.transform = 'rotateX(30deg) rotateY(30deg) scale(1.1)';
+  });
+
+  svgContainer.addEventListener('mouseleave', function() {
+    svgContainer.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
+  });
+});
