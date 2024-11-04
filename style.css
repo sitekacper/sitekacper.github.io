@@ -1,10 +1,10 @@
 /* Global Styles */
 body {
     font-family: 'JetBrains Mono', sans-serif;
-    font-size: 14px; /* Default font size for body text */
+    font-size: 14px;
     line-height: 1.5;
-    background-color: #2a2a2a; /* Dark background */
-    color: #f5e6ca; /* Light text color */
+    background-color: #2a2a2a;
+    color: #f5e6ca;
     margin: 0;
     padding: 0;
     display: flex;
@@ -24,7 +24,7 @@ body {
 /* Header and Footer Styling */
 header, footer {
     text-align: center;
-    font-size: 14px; /* Consistent font size */
+    font-size: 14px;
     color: #f5e6ca;
 }
 
@@ -42,14 +42,14 @@ main {
 
 /* Section Titles Styling */
 h2 {
-    font-size: 16px; /* Font size for section titles (About Me, Skills, etc.) */
+    font-size: 16px;
     color: #fff8ea;
-    margin-bottom: 10px; /* Small spacing below heading */
+    margin-bottom: 10px;
 }
 
 /* Section Spacing */
 section {
-    margin-bottom: 60px; /* Space between each section */
+    margin-bottom: 60px;
 }
 
 /* Skills Section Styling */
@@ -62,31 +62,30 @@ section {
 
 .skill {
     padding: 2px 12px;
-    background-color: #f5e6ca; /* Dark background for each skill */
-    color: #333333; /* Light text color */
-    border-radius: 8px; /* Rounded corners */
-    font-size: 12px; /* Smaller font size for skill labels */
+    background-color: #f5e6ca;
+    color: #333333;
+    border-radius: 8px;
+    font-size: 12px;
     cursor: pointer;
     transition: background-color 0.3s;
-    line-height: 1.5;
 }
 
 .skill:hover {
-    background-color: #4a4a4a; /* Slightly lighter background on hover */
-    color: #f5e6ca; /* Change text color on hover */
+    background-color: #4a4a4a;
+    color: #f5e6ca;
 }
 
 /* Sticky Navbar */
 .bottom-navbar {
     position: fixed;
-    bottom: 10px; /* Lift navbar slightly above screen edge */
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
-    width: 80%; /* Adjust width as needed */
+    width: 80%;
     max-width: 400px;
-    background-color: #3c3c3c; /* Dark background color */
+    background-color: #3c3c3c;
     padding: 10px;
     border-radius: 28px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
@@ -104,24 +103,22 @@ section {
     border-radius: 28px;
     margin: 0 5px;
     transition: background-color 0.3s;
-    max-width: 100px; /* Fixed width for containers */
+    max-width: 100px;
 }
 
 .nav-item:hover {
-    background-color: #5c5c5c; /* Lighter color on hover */
+    background-color: #5c5c5c;
 }
 
-/* Link within each nav-item */
 .nav-item a {
     color: #f5e6ca;
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 8px; /* Space between icon and text */
+    gap: 8px;
     font-size: 12px;
 }
 
-/* Icons in nav-items */
 .nav-item i {
     font-size: 20px;
     color: #f5e6ca;
@@ -130,7 +127,7 @@ section {
 
 .nav-item:hover i,
 .nav-item:hover span {
-    color: #ffffff; /* Change icon and text color to white on hover */
+    color: #ffffff;
 }
 
 /* Text in Navigation */
@@ -139,21 +136,20 @@ section {
     color: #f5e6ca;
 }
 
-/* Project Section Styling */
+/* Projects Section */
 .projects-section {
     max-width: 550px;
     margin: 0 auto;
+    padding: 20px;
     display: grid;
     row-gap: 24px;
-    margin-top: 20px; /* Space from Skills section */
 }
 
 /* Project Section Title */
 .projects-section h2 {
-    font-size: 16px; /* Match section title font size */
-    color: #fff8ea; /* Light text color for title */
+    font-size: 16px;
+    color: #fff8ea;
     margin-bottom: 10px;
-    margin-left: 0; /* Align left like other sections */
 }
 
 /* Individual Project Card */
@@ -162,10 +158,16 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #2a2a2a; /* Match site background */
-    border: 1px solid #4a4a4a; /* Individual border for each card */
+    background-color: #2a2a2a;
+    border: 1px solid #4a4a4a;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.project-card:hover {
+    background-color: #3c3c3c;
 }
 
 .project-content {
@@ -175,33 +177,30 @@ section {
 .project-content h3 {
     font-size: 1.2em;
     margin: 0;
-    color: #f5e6ca; /* Light color for project titles */
+    color: #f5e6ca;
 }
 
 .project-content p {
     font-size: 0.9em;
-    color: #ccc; /* Light gray text for descriptions */
+    color: #ccc;
     margin-bottom: 12px;
 }
 
-/* Updated Button Styling */
+/* Read More Button Styling */
 .project-button {
     padding: 10px 20px;
     font-size: 0.9em;
-    background-color: #f5e6ca; /* White-like background for buttons */
+    background-color: #f5e6ca;
     color: #333;
     border: none;
-    border-radius: 20px; /* Rounded corners for button */
+    border-radius: 20px;
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .project-button:hover {
-    background-color: #e0d4b9; /* Slightly darker shade on hover */
+    background-color: #e0d4b9;
 }
 
 /* Disabled Button Styling */
@@ -212,51 +211,9 @@ section {
 
 /* Project Image */
 .project-image img {
-    max-width: 120px; /* Adjusted size for images to fit within card */
+    max-width: 120px;
     height: auto;
     border-radius: 8px;
-}
-
-/* Available Project Button (Service CTA) */
-.service-cta.available-project {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    border: 1px solid #4a4a4a; /* Border color */
-    border-radius: 20px; /* Rounded corners */
-    background-color: transparent; /* Match background */
-    max-width: 300px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.service-cta.available-project:hover {
-    background-color: #3c3c3c; /* Slightly darker on hover */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.service-cta.available-project .status-dot {
-    color: #63E6BE; /* Green dot color */
-    font-size: 12px; /* Adjust size for the dot */
-    margin-right: 8px;
-}
-
-.service-cta.available-project span {
-    color: #f5e6ca; /* Light text color */
-    font-size: 14px; /* Font size for text */
-    font-family: 'JetBrains Mono', sans-serif;
-}
-
-.service-cta.available-project .arrow-icon {
-    color: #f5e6ca; /* White arrow color */
-    font-size: 16px;
-    margin-left: 10px;
-    transition: transform 0.3s;
-}
-
-.service-cta.available-project:hover .arrow-icon {
-    transform: translateX(4px); /* Subtle arrow movement on hover */
 }
 
 /* Popup Styling */
@@ -285,11 +242,6 @@ section {
     max-height: 90vh;
 }
 
-.popup-content h2 {
-    color: #f5e6ca;
-    font-size: 16px; /* Consistent heading font size */
-}
-
 .close-btn {
     position: absolute;
     top: 20px;
@@ -306,4 +258,45 @@ section {
     width: 100%;
     margin-top: 10px;
     border-radius: 10px;
+}
+
+/* Available Project Button (Service CTA) */
+.service-cta.available-project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid #4a4a4a;
+    border-radius: 20px;
+    background-color: transparent;
+    max-width: 300px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.service-cta.available-project:hover {
+    background-color: #3c3c3c;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-cta.available-project .status-dot {
+    color: #63E6BE;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.service-cta.available-project span {
+    color: #f5e6ca;
+    font-size: 14px;
+}
+
+.service-cta.available-project .arrow-icon {
+    color: #f5e6ca;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.service-cta.available-project:hover .arrow-icon {
+    transform: translateX(4px);
 }
