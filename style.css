@@ -151,14 +151,15 @@ section {
     display: flex;
     align-items: center;
     padding: 15px;
-    background-color: #3c3c3c; /* Dark color */
-    border-radius: 15px;
+    background-color: #2a2a2a; /* Match the site background */
+    border: 1px solid #4a4a4a; /* Border for each project card */
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .project-card:hover {
-    background-color: #5c5c5c; /* Lighter color on hover */
+    background-color: #3c3c3c; /* Slightly darker color on hover */
 }
 
 .project-card img {
@@ -232,28 +233,28 @@ section {
 .projects-section {
     max-width: 550px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #2a2a2a; /* Dark background to match site theme */
-    border: 1px solid #4a4a4a; /* Border similar to other sections */
-    border-radius: 8px;
+    padding: 0 20px 20px; /* Adjusted padding */
     display: grid;
     row-gap: 24px;
     margin-top: 20px; /* Space from Skills section */
 }
 
+/* Project Section Title */
 .projects-section h2 {
     font-size: 16px; /* Match section title font size */
     color: #fff8ea; /* Light text color for title */
     margin-bottom: 10px;
+    margin-left: 0; /* Align left like other sections */
 }
 
-/* Project Card Styling */
+/* Individual Project Card */
 .project-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #3c3c3c; /* Dark card background */
+    background-color: #2a2a2a; /* Match site background */
+    border: 1px solid #4a4a4a; /* Individual border for each card */
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
