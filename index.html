@@ -47,6 +47,8 @@
         <!-- Projects Section with Popup functionality -->
         <section class="projects-section">
             <h2>Night Time Projects</h2>
+            
+            <!-- Project with Video -->
             <div class="project-card" onclick="openProject('project1')">
                 <div class="project-content">
                     <h3>Networking Course</h3>
@@ -54,9 +56,11 @@
                     <a class="project-button">Read More</a>
                 </div>
                 <div class="project-image">
-                    <img src="path/to/your-image.svg" alt="Networking Course">
+                    <video src="https://cdn.llm.report/openai-demo.mp4" autoplay loop muted playsinline class="pointer-events-none mx-auto h-40 w-full object-cover object-top"></video>
                 </div>
             </div>
+            
+            <!-- Project with Image -->
             <div class="project-card" onclick="openProject('project2')">
                 <div class="project-content">
                     <h3>Loom Roast</h3>
@@ -67,6 +71,8 @@
                     <img src="path/to/your-image.svg" alt="Loom Roast">
                 </div>
             </div>
+            
+            <!-- Another Project with Image -->
             <div class="project-card" onclick="openProject('project3')">
                 <div class="project-content">
                     <h3>AI-Native Software</h3>
